@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="VoiceFormApp.MainPage"
+    Title="Voice Registration">
+
+    <ScrollView>
+
+        <VerticalStackLayout Padding="25" Spacing="15">
+
+            <Label
+                Text="Voice-Based Registration Form"
+                FontSize="24"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"/>
+
+            <Label
+                x:Name="StatusLabel"
+                Text="Press Start Voice"
+                HorizontalOptions="Center"
+                TextColor="Blue"/>
+
+            <Entry
+                x:Name="NameEntry"
+                Placeholder="Full Name"/>
+
+            <Entry
+                x:Name="EmailEntry"
+                Placeholder="Email Address"
+                Keyboard="Email"/>
+
+            <Entry
+                x:Name="PhoneEntry"
+                Placeholder="Phone Number"
+                Keyboard="Telephone"/>
+
+            <Picker
+                x:Name="GenderPicker"
+                Title="Select Gender">
+                <Picker.Items>
+                    <x:String>Male</x:String>
+                    <x:String>Female</x:String>
+                    <x:String>Other</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Editor
+                x:Name="AddressEditor"
+                HeightRequest="100"
+                Placeholder="Address"/>
+
+            <HorizontalStackLayout
+                HorizontalOptions="Center"
+                Spacing="20">
+
+                <Button
+                    Text="🎤 Start Voice"
+                    Clicked="OnStartVoiceClicked"
+                    BackgroundColor="Green"
+                    TextColor="White"/>
+
+                <Button
+                    Text="⏹ Stop"
+                    Clicked="OnStopVoiceClicked"
+                    BackgroundColor="Red"
+                    TextColor="White"/>
+
+            </HorizontalStackLayout>
+
+            <Button
+                Text="Submit"
+                Clicked="OnSubmitClicked"
+                BackgroundColor="Blue"
+                TextColor="White"/>
+
+        </VerticalStackLayout>
+
+    </ScrollView>
+
+</ContentPage>

@@ -1,0 +1,20 @@
+# Build folders
+bin/
+obj/
+
+# Visual Studio
+.vs/
+.vscode/
+
+# User files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# MAUI
+*.apk
+*.aab
+
+# Logs
+*.log
