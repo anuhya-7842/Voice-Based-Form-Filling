@@ -11,10 +11,5 @@ obj/
 *.suo
 *.userosscache
 *.sln.docstates
-
-# MAUI
-*.apk
-*.aab
-
 # Logs
 *.log
