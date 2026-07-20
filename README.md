@@ -180,5 +180,3 @@ Review & Submit
 
 A demo video showcasing the application workflow can be found in the repository or LinkedIn project section.
 LinkedIn: https://www.linkedin.com/in/dhathri-anuhya-devarampati-a54946323/
-
----
